@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout Responsivo</title>
+    <style>
+*{box-sizing: border-box;}
+
+html{font-size: 16px;}
+
+body{
+    font-family:  verdana,sans-serif;
+    background-color: beige;
+}
+
+#container{
+    box-shadow: black 0 0 10px;
+    padding: 1% ;
+}
+
+header{
+    background-color: rgb(2, 217, 255);
+    text-align: center;
+    
+}
+
+h1,h2,p{
+    margin:0;
+    padding: 0;
+}
+
+nav{background-color: yellow;}
+
+.colunaa{background-color:darkseagreen ;}
+.colunab{background-color: palevioletred ;}
+.colunac{background-color: tomato ;}
+
+footer{ background-color: gray;}
+
+h2,p{padding: 0.5rem;}
+
+/* utilizamos min-height para garantir que todos tenham pelo menos a altura especificada (no caso 300px) se necessário,cada uma aumentará automaticamente */
+article {min-height: 300px;}
+
+
+@media screen and (min-width:700px) {
+    header{ display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+    nav{
+        height: 40px;
+
+        /* Usamos % para garantir que a referência de tamanho é o header */
+        width: 50%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    main{display: flex;
+    flex-wrap: wrap;}
+    .colunaa{width: 60%;}
+    .colunab{width: 40%;}
+    .colunac{width: 100%;}
+}
+
+@media screen and (min-width:900px){
+    .colunaa,.colunab,.colunac{width:33.33%}
+    #container{ max-width: 1100px;
+    margin: auto;}
+    html  {font-size: 20px;}
+}
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    
+        <header>
+    <h1> Mobile First </h1>
+    <nav>
+        <a href="">link</a>
+        <a href="">link</a>
+        <a href="">link</a>
+    </nav>
+        </header>
+
+        <main>
+            <article class="colunaa">
+             <h2>Coluna A</h2>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae omnis cupiditate illo dolores saepe voluptatibus ex ipsa id qui sapiente nulla exercitationem, quam recusandae unde aperiam corporis perspiciatis repudiandae quisquam.</p> 
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt qui officiis temporibus natus architecto rerum et doloribus nostrum eius voluptas!</p>  
+            </article>
+
+            <article class="colunab">
+                <h2>Coluna B</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et cum quisquam hic. Sed deserunt qui esse culpa illum ullam nam vero quam, cum totam fugit quibusdam eaque voluptate eveniet obcaecati!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime possimus, sit, laborum officia repellendus, veniam est accusantium ipsa explicabo fugit exercitationem hic magni expedita delectus perferendis obcaecati laboriosam! Dolor, mollitia!</p>
+            </article>
+
+
+            <article class="colunac">
+                <h2>Coluna C</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis repudiandae cumque alias in quos, inventore magni quidem porro sequi voluptatum dignissimos perferendis itaque, nulla, veritatis eveniet velit mollitia doloremque aut!</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit autem, architecto, itaque earum quae corporis natus aliquam nam delectus tenetur provident ullam esse! Culpa optio adipisci suscipit, hic nulla dignissimos?</p>
+            </article>
+        </main>
+
+        <footer>
+            <h2>Design Responsivo</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur ex velit nisi sit. Expedita quam vero voluptas cum eveniet maxime veritatis minus dolorem voluptate saepe iste, perferendis error. Porro, beatae.</p>
+        </footer>
+
+    </div>
+</body>
+</html>

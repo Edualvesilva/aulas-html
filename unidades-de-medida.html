@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unidades de medida</title>
+    <style>
+        *{box-sizing: border-box;}
+        body{ font-family: Verdana;}
+
+        /* Elemento/tag RAÍZ (16px é padrão) */
+        html{font-size: 20px;}
+
+        h1{font-size: 3rem;}  /* 60px */
+        h2{font-size: 2rem;}  /* 40px*/
+        h3{font-size: 1.5;}   /*30px*/
+        p{font-size: 1rem;}   /*20px*/
+         
+        #exemplo-viewport{border:  solid 3px red;
+            width: 400px;
+            margin: auto;
+            height: 70vh;
+        }
+
+        #um{background-color: yellow;
+        width: 50vw;}
+
+        #dois{background-color: green;}
+
+    </style>
+</head>
+<body>
+    <h1>Unidades de medida para design responsivo</h1>
+    <hr>
+    <!-- Unidades já conhecidas/usadas: px(pixel) e % (porcentagem) -->
+    <h2>REM (R-EME)</h2>
+    <p>a medida R-EME (rem) é relativa ao <code>font-size</code> do elemento  <b>raíz html</b>.
+    </p>
+    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus neque soluta ipsam maxime nobis placeat voluptatem nisi atque ullam, enim ducimus cupiditate labore maiores? Incidunt rem fugit optio quis iusto?</h3>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus laboriosam sit magnam veritatis et quia, eligendi ullam architecto provident ut dolore cumque accusamus labore officia! Iusto excepturi voluptatibus dicta aspernatur.
+    </p>
+
+    <ul>
+        <li>teste 1</li>
+        <li>teste 2</li>
+    </ul>
+<hr>    
+    <h2>VW e VH</h2>
+    <p>as medidas <abbr title="viewport width">VW</abbr> e <abbr title="viewport height">VH</abbr>
+    são relativas à área de visualização do navegador (chamada de viewport)
+    </p>
+    <p>VW diz respeito à largura da viewport e VH diz respeito à altura da viewport</p>
+
+    <div id="exemplo-viewport">
+        <div id="um">
+            <h2>UM</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis nulla id molestiae animi laboriosam dicta ipsa ab omnis reprehenderit ipsam aspernatur, eos nihil veniam fugiat mollitia perferendis inventore optio necessitatibus!</p>
+        </div>
+        <div id="dois">
+            <h3>DOIS</h3>
+            <p>lorem ipsum dolor sit</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

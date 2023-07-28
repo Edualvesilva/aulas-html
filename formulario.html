@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    
+    <h1>Tags e Atributos para Formulários</h1>
+    <hr>
+    <p>Interface com campos para entrada e seleção de dados.</p>
+
+
+        <!-- Grupo de campos -->
+    <form action="" method="post">
+        <!-- Nome -->
+        <p>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Digite seu Nome Aqui" required>
+        </p>
+        <!-- E-mail -->
+        <p>
+        <label for="email">E-mail:</label>
+        <input type="email" name="email" id="email" placeholder="Ex:Jose@gmail.com" required>
+        </p>
+
+        <p>Deseja receber informativos?  <br>
+        <input type="radio" name="answer" id="sim">
+        <label for="sim">Sim</label>
+
+        <input type="radio" name="answer" id="nao">
+        <label for="nao">Não</label>
+        </p>
+
+        <p>Escolha as tecnologias de sua preferência: <br>
+            <input type="checkbox" name="programas" id="css">
+            <label for="">CSS</label>
+
+            <input type="checkbox" name="programas" id="html">
+            <label for="">HTML</label>
+
+            <input type="checkbox" name="programas" id="js">
+            <label for="">JS</label>
+        </p>
+
+        <!-- Data de nascimento -->
+        <p>
+            <label for="date">Data de Nascimento:</label>
+            <input type="date" name="data" id="data" min="2000-01-01" max="2023-03-03">
+        </p>
+
+        <!-- Assunto -->
+        <p>
+            <label for="assunto"> Qual assunto?</label>
+            <select name="assunto" id="assunto" required>
+                <option value=""></option>
+                <option value="reclamacao">Reclamações</option>
+                <option value="dinheiro">me dá dinheiro</option>
+                <option value="sem">sem assunto</option>
+            </select>
+        </p>
+
+        <!-- Mensagem -->
+        <p>
+            <label for="msg">Mensagem(minímo de 10 e máximo de 100)</label> <br>
+            <textarea required maxlength="100" minlength="10" name="msg" id="msg" cols="30" rows="8" title="máximo de 100 palavras"></textarea>
+            
+        </p>
+
+        <!-- Botão -->
+        <label for="botao"></label>
+        <button type="submit">Envie aqui</button>
+       
+    </form>
+
+
+
+</body>
+</html>
